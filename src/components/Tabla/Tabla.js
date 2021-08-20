@@ -37,7 +37,7 @@ export const Tabla = () => {
                 data.map((res) =>  { return(
                   <tr key={res.id}>
                     <td>{res.name}</td>
-                    <td>{res.astName}</td>
+                    <td>{res.lastName}</td>
                     <td>{res.language}</td>
                     <td>{res.email}</td>
                     <td>{res.sex}</td>
