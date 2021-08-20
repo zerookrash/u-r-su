@@ -13,7 +13,7 @@ export const Formulario = () => {
   const [redirect, setRedirect] = useState(false);
 
   const [formValues, handleInputChange] = useForm({
-    user: "",
+    email: "",
     pass: "",
     confirm: "",
     name: "",
@@ -22,14 +22,14 @@ export const Formulario = () => {
     sex: "",
     language: "",
     country: "",
-    province: "",
+    state: "",
     city: "",
-    phone: "",
+    cellphone: "",
     create: moment().format(),
   });
 
   const {
-    user,
+    email,
     pass,
     confirm,
     name,
@@ -38,9 +38,9 @@ export const Formulario = () => {
     sex,
     language,
     country,
-    province,
+    state,
     city,
-    phone,
+    cellphone,
     create,
   } = formValues;
 
@@ -81,13 +81,13 @@ export const Formulario = () => {
             <div className="col-md-4 col-sm-12 mt-3 mb-3">
               <input
                 type="text"
-                name="user"
+                name="email"
                 className={`form-control ${
-                  user.length === 0 ? "is-invalid" : "is-valid"
+                  email.length === 0 ? "is-invalid" : "is-valid"
                 }`}
                 placeholder="User / Email"
                 autoComplete="off"
-                value={user}
+                value={email}
                 onChange={handleInputChange}
               />
             </div>
@@ -155,13 +155,13 @@ export const Formulario = () => {
             <div className="col-md-6 col-sm-12 mt-3 mb-3">
               <input
                 type="text"
-                name="phone"
+                name="cellphone"
                 className={`form-control ${
-                  phone.length === 0 ? "is-invalid" : "is-valid"
+                  cellphone.length === 0 ? "is-invalid" : "is-valid"
                 }`}
                 placeholder="Phone Number"
                 autoComplete="off"
-                value={phone}
+                value={cellphone}
                 onChange={handleInputChange}
               />
             </div>
@@ -250,13 +250,13 @@ export const Formulario = () => {
             <div className="col-md-4 col-sm-12 mt-3 mb-3">
               <input
                 type="text"
-                name="province"
+                name="state"
                 className={`form-control ${
-                  province.length === 0 ? "is-invalid" : "is-valid"
+                  state.length === 0 ? "is-invalid" : "is-valid"
                 }`}
-                placeholder="Province"
+                placeholder="State"
                 autoComplete="off"
-                value={province}
+                value={state}
                 onChange={handleInputChange}
               />
             </div>
@@ -269,17 +269,17 @@ export const Formulario = () => {
             type="submit"
             className={`btn btn-outline-primary btn-lg mt-3 
           ${
-            user.length === 0 ||
+            email.length === 0 ||
             name.length === 0 ||
             lastName.length === 0 ||
             pass.length === 0 ||
             confirm.length === 0 ||
-            phone.length === 0 ||
+            cellphone.length === 0 ||
             country.length === 0 ||
             city.length === 0 ||
             sex.length === 0 ||
             language.length === 0 ||
-            province.length === 0 ||
+            state.length === 0 ||
             birthdayLimit < 18
               ? "disabled"
               : ""

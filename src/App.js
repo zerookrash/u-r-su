@@ -8,7 +8,6 @@ import {
 import { Calendario } from './components/Calendario/Calendario';
 import { Formulario } from './components/Formulario/Formulario';
 import { Tabla } from './components/Tabla/Tabla';
-import { Footer } from './shared/Footer/Footer';
 import { Navbar } from './shared/Navbar/Navbar';
 
 import './App.css'
@@ -30,8 +29,6 @@ export const App = () => {
       </Switch>
       
       </div>
-
-      <Footer />
 
       </div>
     </Router>

@@ -13,7 +13,7 @@ export const Tabla = () => {
 
   return (
     <div className="scroll">
-      <table className="table table-striped">
+      <table className="table table-striped table-responsive">
         <thead>
           <tr>
             <th scope="col">Name</th>
@@ -26,7 +26,6 @@ export const Tabla = () => {
             <th scope="col">City</th>
             <th scope="col">Coutry</th>
             <th scope="col">State</th>
-            <th scope="col">Account number</th>
             <th scope="col">Create / Update</th>
           </tr>
         </thead>
@@ -47,7 +46,6 @@ export const Tabla = () => {
                     <td>{res.city}</td>
                     <td>{res.country}</td>
                     <td>{res.state}</td>
-                    <td>{res.numcuenta}</td>
                     <td>{res.signupdate}</td>
                   </tr>
                 )})
