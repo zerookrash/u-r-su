@@ -51,7 +51,6 @@ export const Calendario = () => {
           events={events}
           eventColor="blueligth"
           nowIndicator
-          // dateClick={(e) => console.log(e)}
         />
       </section>
     </>

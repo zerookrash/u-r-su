@@ -50,7 +50,16 @@ export const Formulario = () => {
     if (pass === confirm) {
       formValues.language = formValues.language.toUpperCase();
       formValues.sex = formValues.sex.toUpperCase();
-      localStorage.setItem("registro", JSON.stringify(formValues));
+      // localStorage.setItem("registro", JSON.stringify(formValues));
+      fetch('https://polls-service-pztaufrgvq-uc.a.run.app/alumnos/join', {
+        method: 'POST',
+        body: JSON.stringify(formValues),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+      .then(res => res.json())
+      .catch(err => console.log(err));
       setRedirect( redirect => redirect = true );
     } else {
       Swal.fire("All fields are required");

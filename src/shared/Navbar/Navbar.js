@@ -6,7 +6,7 @@ export const Navbar = () => {
     <nav className="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
       <div className="container-fluid nav-wraper">
         <Link className="navbar-brand" to="/">
-          useContext
+          U-R-US
         </Link>
 
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
