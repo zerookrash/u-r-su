@@ -33,6 +33,7 @@ export const useFetch = (url) => {
           error: "No se puedo cargar la info",
         });
       });
+  // eslint-disable-next-line     
   }, [url]);
 
   return state;
