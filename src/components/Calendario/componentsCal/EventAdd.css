@@ -1,6 +1,14 @@
 .formulario {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-flow: column wrap;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }

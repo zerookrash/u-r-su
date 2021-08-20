@@ -1,10 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-// Componentes
-import { Formulario } from './components/Formulario/Formulario';
+import { App } from './App';
 
 ReactDOM.render(
-  <Formulario />,
+  <App />,
   document.getElementById('root')
 );

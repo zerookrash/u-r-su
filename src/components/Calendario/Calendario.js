@@ -34,7 +34,7 @@ export const Calendario = () => {
   
   return (
     <>
-      <section className="container card mt-3 mb-3 p-3">
+      <section className="card mt-3 p-3">
         <div className="row">
           <div className="col">
             <EventAdd 

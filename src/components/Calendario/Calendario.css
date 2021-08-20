@@ -1,3 +1,6 @@
+.fc {
+  height: 31rem;
+}
 /* Header */
 .fc .fc-toolbar.fc-header-toolbar {
   display: flex;

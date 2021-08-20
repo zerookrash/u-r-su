@@ -32,10 +32,10 @@ export const EventAdd = ({ handleAddEvent }) => {
   
 
   return (
-    <div>
+    <div className="wrapper card">
       <h6>Schedule a class</h6>
 
-      <form className="card p-3 formulario" onSubmit={handleSubmit}>
+      <form className="p-3 formulario" onSubmit={handleSubmit}>
         <div className="row">
           <div className="col-md-6 col-sm-12">
             <label>Class theme
